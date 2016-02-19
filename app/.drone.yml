@@ -1,0 +1,6 @@
+image: g3org3/node
+script:
+  - cd app
+  - npm install
+  - npm test
+  - echo "done"
