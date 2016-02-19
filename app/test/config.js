@@ -15,11 +15,4 @@ lab.experiment('Config', function () {
         done();
     });
 
-
-    lab.test('it gets config meta data', function (done) {
-
-        Code.expect(Config.meta('/')).to.match(/this file configures the plot device/i);
-
-        done();
-    });
 });
