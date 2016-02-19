@@ -5,7 +5,7 @@ script:
   - npm test
   - echo "done"
 
-publish:
+deploy:
   docker:
     username: g3org3
     password: $$password
