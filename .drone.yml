@@ -4,9 +4,18 @@ script:
   - npm install
   - npm test
   - echo "done"
+
 publish:
   docker:
     username: g3org3
     password: $$password
     email: $$email
-    repo: g3org3/fun
+    repo: $$image
+
+deploy:
+  rancher:
+    url: $$url
+    access_key: $$access_key
+    secret_key: $$secret_key
+    service: $$service
+    docker_image: $$image
