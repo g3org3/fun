@@ -11,12 +11,12 @@ compose:
   redis:
     image: redis
 
-publish:
-  docker:
-    username: g3org3
-    password: $$password
-    email: $$email
-    repo: g3org3/fun
+# publish:
+#   docker:
+#     username: g3org3
+#     password: $$password
+#     email: $$email
+#     repo: g3org3/fun
 
 deploy:
   tutum:
