@@ -10,5 +10,5 @@ deploy:
     username: g3org3
     api_key: $$API_KEY
     service: drone
-    image: $$image
+    image: g3org3/fun:lastes
     redeploy: true
