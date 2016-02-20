@@ -3,3 +3,4 @@ app/test/artifacts/*
 app/npm-debug.log
 .DS_Store
 *.log
+secrets.yml
