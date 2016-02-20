@@ -1,7 +1,9 @@
 build:
   image: g3org3/node
   commands:
-    - export REDIS='redis'
+    - export REDIS=localhost
+    - export TUTUM_USER="$$TUTUM_USER"
+    - export TUTUM_APIKEY="$$TUTUM_APIKEY"
     - cd app
     - npm install
     - npm test
