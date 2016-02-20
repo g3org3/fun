@@ -2,8 +2,6 @@ build:
   image: g3org3/node
   commands:
     - export REDIS=localhost
-    - export TUTUM_USER="$$TUTUM_USER"
-    - export TUTUM_APIKEY="$$TUTUM_APIKEY"
     - cd app
     - npm install
     - npm test
@@ -20,10 +18,10 @@ compose:
 #     email: $$email
 #     repo: g3org3/fun
 
-deploy:
-  tutum:
-    username: "$$TUTUM_USER"
-    api_key: "$$TUTUM_APIKEY"
-    docker_image: tutum.co/g3org3/fun
-    redeploy: true
-    reuse_volumes: true
+# deploy:
+#   tutum:
+#     username: "$$TUTUM_USER"
+#     api_key: "$$TUTUM_APIKEY"
+#     docker_image: tutum.co/g3org3/fun
+#     redeploy: true
+#     reuse_volumes: true
