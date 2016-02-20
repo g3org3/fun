@@ -1,5 +1,6 @@
 image: g3org3/node
 script:
+  - export REDIS='redis'
   - cd app
   - npm install
   - npm test
@@ -12,3 +13,7 @@ deploy:
     service: drone
     image: g3org3/fun:lastest
     redeploy: true
+
+compose:
+  redis:
+    image: redis
