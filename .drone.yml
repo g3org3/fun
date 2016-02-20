@@ -4,11 +4,9 @@ script:
   - npm install
   - npm test
   - echo "done"
-
-deploy:
-  tutum:
+publish:
+  docker:
     username: g3org3
-    api_key: $$API_KEY
-    image: g3org3/fun
-    redeploy: true
-    reuse_volumes: true
+    password: $$password
+    email: $$email
+    repo: g3org3/fun
