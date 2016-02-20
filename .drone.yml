@@ -18,10 +18,10 @@ compose:
 #     email: $$email
 #     repo: g3org3/fun
 
-# deploy:
-#   tutum:
-#     username: "$$TUTUM_USER"
-#     api_key: "$$TUTUM_APIKEY"
-#     docker_image: tutum.co/g3org3/fun
-#     redeploy: true
-#     reuse_volumes: true
+deploy:
+  tutum:
+    username: "$$TUTUM_USER"
+    api_key: "$$TUTUM_APIKEY"
+    docker_image: tutum.co/g3org3/fun
+    redeploy: true
+    reuse_volumes: true
