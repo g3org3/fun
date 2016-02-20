@@ -6,6 +6,6 @@ WORKDIR ${APP_PATH}
 COPY package.json ${APP_PATH}/package.json
 RUN npm install --production
 
-COPY . ${APP_PATH}
+COPY app ${APP_PATH}
 
 CMD ["npm", "start"]
