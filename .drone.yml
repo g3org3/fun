@@ -1,10 +1,11 @@
-image: g3org3/node
-script:
-  - export REDIS='redis'
-  - cd app
-  - npm install
-  - npm test
-  - echo "done"
+build:
+  image: g3org3/node
+  commands:
+    - export REDIS='redis'
+    - cd app
+    - npm install
+    - npm test
+    - echo "done"
 
 compose:
   redis:
