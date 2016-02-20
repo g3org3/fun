@@ -8,7 +8,7 @@ script:
 deploy:
   tutum:
     username: g3org3
-    api_key: $$API_KEY
+    api_key: "$$API_KEY"
     service: drone
-    image: g3org3/fun:lastes
+    image: g3org3/fun:lastest
     redeploy: true
