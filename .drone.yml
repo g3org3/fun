@@ -17,3 +17,11 @@ publish:
     password: $$password
     email: $$email
     repo: g3org3/fun
+
+deploy:
+  tutum:
+    username: g3org3
+    api_key: $$API_KEY
+    docker_image: g3org3/fun
+    redeploy: true
+    reuse_volumes: true
